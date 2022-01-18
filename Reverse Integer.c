@@ -1,11 +1,10 @@
+
 #include <stdio.h>
-int main() 
-{
+int main() {
     int n, rev = 0, remainder;
     
     scanf("%d", &n);
-    while (n != 0) 
-    {
+    while (n != 0) {
         remainder = n % 10;
         rev = rev * 10 + remainder;
         n /= 10;
@@ -13,5 +12,3 @@ int main()
     printf("%d", rev);
     return 0;
 }
-
-
