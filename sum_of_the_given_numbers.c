@@ -1,25 +1,17 @@
 #include<stdio.h>
 int main()
 {
-    int i,j,row,colon,a[10][10],sum;
-    scanf("%d",&i);
-    for(row=0;row<i;row++)
+    int i,n,a[100],b[100],sum=0;
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
     {
-        for(colon=0;colon<2;colon++)
-        {
-            scanf("%d",&a[row][colon]);
-        }
+        scanf("%d%d",&a[i],&b[i]);
     }
-    for(row=0;row<i;row++)
+    for(i=0;i<n;i++)
     {
-        sum=0;
-        for(colon=0;colon<2;colon++)
-        {
-            sum=sum+a[row][colon];
-        }
+        sum=a[i]+b[i];
         printf("%d
 ",sum);
     }
     return 0;
-    
 }
