@@ -9,9 +9,9 @@ int main()
     }
     for(i=0;i<n;i++)
     {
-        if(ar[i]%2==0 ||ar[i]%2!=0)
+        if(ar[i]%2==0 || ar[i]%2!=0)
         {
-            sum=sum+ar[i];
+            sum+=ar[i];
         }
     }
     printf("%d",sum);
