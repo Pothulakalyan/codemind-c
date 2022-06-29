@@ -1,17 +1,14 @@
 #include<stdio.h>
 int main()
 {
-    int i,n,a[100],b[100],sum=0;
-    scanf("%d",&n);
-    for(i=0;i<n;i++)
+    int a,i,s,n1,n2;
+    scanf("%d",&a);
+    for (i=1; i<=a; i++)
     {
-        scanf("%d%d",&a[i],&b[i]);
-    }
-    for(i=0;i<n;i++)
-    {
-        sum=a[i]+b[i];
-        printf("%d
-",sum);
+      scanf("%d%d",&n1,&n2);
+      s=n1+n2;
+      printf("%d
+",s);
     }
     return 0;
 }
